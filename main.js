@@ -5,7 +5,7 @@ const urlParams = extractUrlParams();
 const numThreads = parseInt(urlParams['threads']) || 4;
 const numTiles = () => {
   return parseInt(urlParams['n']) ||
-      Math.round(window.innerWidth * window.innerHeight / 10000);
+      Math.round(window.innerWidth * window.innerHeight / 5000);
 };
 const metric = [1, 2, 3].includes(parseInt(urlParams['metric'])) ?
     parseInt(urlParams['metric']) :
